@@ -1,0 +1,7 @@
+---
+
+## A base dos comandos de update em yml para o pfSense é '- name: escolher o nome' 'shell: comando shell'
+
+# package update
+- name: pfsense_group update - repo update
+  shell: pkg-static update -f

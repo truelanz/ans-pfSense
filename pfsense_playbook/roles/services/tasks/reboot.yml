@@ -1,0 +1,6 @@
+# Reboot pfSense System
+---
+- name: pfSense reboot
+  become: yes
+  shell: playback reboot
+  register: output
