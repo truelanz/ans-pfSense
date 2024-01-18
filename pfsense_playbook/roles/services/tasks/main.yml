@@ -2,5 +2,5 @@
 ---
 - name: pfSense reboot
   become: yes
-  shell: playback reboot
+  shell: reboot
   register: output

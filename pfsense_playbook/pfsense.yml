@@ -5,9 +5,9 @@
   hosts: pfsense_group
   gather_facts: False
   roles:
-    - backup
+    #- backup
     #- alias
     #- rules
     #- update
     #- common
-    #- services
+    - services
