@@ -1,13 +1,13 @@
 ---
-- name: Reboot pfSense
+- name: Creating a cronjob
   hosts: pfsense_group
   become: yes
   tasks:
-    - name: Schedule name
+    - name: pfSense reboot
       cron:
         name: pfsense reboot
-        minute: "50"
-        hour: "13"
+        minute: "16"
+        hour: "14"
         day: "*"
         month: "*"
         weekday: "*"

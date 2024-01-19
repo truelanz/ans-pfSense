@@ -3,9 +3,9 @@
   hosts: pfsense_group
   become: yes
   tasks:
-    - name: Schedule name
+    - name: e2guardina restart
       cron:
-        name: restarting e2guardian service
+        name: restart e2guardian service
         minute: "46"
         hour: "13"
         day: "*"
