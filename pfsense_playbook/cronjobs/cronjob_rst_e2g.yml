@@ -1,0 +1,15 @@
+---
+- name: Creating a cronjob
+  hosts: pfsense_group
+  become: yes
+  tasks:
+    - name: Schedule name
+      cron:
+        name: restarting e2guardian service
+        minute: "46"
+        hour: "13"
+        day: "*"
+        month: "*"
+        weekday: "*"
+        user: root
+        job: "pfSsh.php playback svc restart e2guardian"

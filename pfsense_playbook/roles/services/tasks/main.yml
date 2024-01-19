@@ -1,6 +1,0 @@
-# Reboot pfSense System
----
-- name: pfSense reboot
-  become: yes
-  shell: reboot
-  register: output

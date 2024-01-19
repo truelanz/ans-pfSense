@@ -1,0 +1,4 @@
+---
+- name: pfsense reboot
+  become: yes
+  shell: reboot

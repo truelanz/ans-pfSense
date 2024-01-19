@@ -1,0 +1,15 @@
+---
+- name: Reboot pfSense
+  hosts: pfsense_group
+  become: yes
+  tasks:
+    - name: Schedule name
+      cron:
+        name: pfsense reboot
+        minute: "50"
+        hour: "13"
+        day: "*"
+        month: "*"
+        weekday: "*"
+        user: root
+        job: "reboot"
