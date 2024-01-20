@@ -12,7 +12,6 @@
 
 [pfsense_group]
 192.168.56.20
-192.168.56.30
 
 [pfsense_group:vars]
 ansible_user=root

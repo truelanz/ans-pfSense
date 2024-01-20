@@ -1,0 +1,4 @@
+# logs - horários de reboot do serviço e2guardian
+
+
+serviço e2guardian reiniciado Fri Jan 19 22:05:05 -03 2024

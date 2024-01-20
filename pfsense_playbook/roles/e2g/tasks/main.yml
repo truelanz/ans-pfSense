@@ -3,5 +3,5 @@
 ---
 - name: e2guardin service reboot
   become: yes
-  shell: pfSsh.php playback svc stop e2guardian & echo "e2guardian foi reiniciado"
+  shell: pfSsh.php playback svc stop e2guardian
   register: output

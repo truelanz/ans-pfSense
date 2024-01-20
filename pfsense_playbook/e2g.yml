@@ -1,0 +1,10 @@
+---
+
+# pfsense playbook
+
+- name: pfSense 2.7.2 Playbook
+  hosts: pfsense_group
+  gather_facts: false
+  roles:
+    - e2g
+...

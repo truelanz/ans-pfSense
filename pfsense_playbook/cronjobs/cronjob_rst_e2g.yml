@@ -6,10 +6,10 @@
     - name: e2guardina restart
       cron:
         name: restart e2guardian service
-        minute: "46"
-        hour: "13"
+        minute: "53"
+        hour: "20"
         day: "*"
         month: "*"
         weekday: "*"
         user: root
-        job: "pfSsh.php playback svc restart e2guardian"
+        job: "pfSsh.php playback svc restart e2guardian & echo $(date) >> /etc/ansible/pfsense_playbook/roles/e2g/files/logs.txt"
